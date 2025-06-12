@@ -1,0 +1,13 @@
+[
+	{
+		"name": "Thingy", // update
+		"replaces": "Castle",
+		"cost": 120,
+		"uniqueTo": "Australia",
+		"cityStrength": 10,
+		"cityHealth": 75,
+		"hurryCostModifier": 50,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+	},
+]
