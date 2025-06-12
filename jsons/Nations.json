@@ -1,0 +1,40 @@
+[
+	{
+		"name": "Australia",
+		"leaderName": "Harold Holt",
+		"adjective": ["Australian"],
+		
+		"startBias": ["Coast"],
+		"preferredVictoryType": "Cultural",
+		
+		"startIntroPart1": "start text 1",
+		"startIntroPart2": "start text 2",
+		
+		"declaringWar": "That land of yours? Mine.",
+		"attacked": "Unfair Dinkum!",
+		"defeated": "I'm going for a swim.",
+		"introduction": "G'day Mate! I'm Harold Holt",
+		
+		"neutralHello": "G'day!",
+		"hateHello": "Wadda you want, you yellow bellied bastard?",
+		"tradeRequest": "Tradies?",
+		
+		"outerColor": [0,0,255], // todo 
+		"innerColor": [255,255,0], // todo
+		
+		"favoredReligion": "Christianity",
+		
+		"uniqueName": "Fertile Lands", // Will need to update 
+		"uniques": ["Double quantity of [Wheat] produced",
+			    "Double quantity of [Iron] produced",
+			    "Double quantity of [Coal] produced",
+			    "Double quantity of [Horses] produced"
+			   ],
+		"cities": [
+			"Canberra",
+			"Melbourne",
+      "Sydney",
+      "Adelaide"
+		],
+	},
+]
