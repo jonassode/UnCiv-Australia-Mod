@@ -5,8 +5,8 @@
         "adjective": ["Australian"],
         "startBias": ["Coast"],
         "preferredVictoryType": "Cultural",
-        "startIntroPart1": "start text 1",
-        "startIntroPart2": "start text 2",
+        "startIntroPart1": "G’day Harold Holt! Time to dive into history and prove you can go the distance—no flippers needed.",
+        "startIntroPart2": "Guide the land Down Under to new heights (and depths), where legends never vanish!",
         "declaringWar": "That land of yours? Mine.",
         "attacked": "Unfair Dinkum!",
         "defeated": "I'm going for a swim.",
@@ -17,7 +17,7 @@
         "outerColor": [0, 132, 61],
         "innerColor": [255, 205, 0],
         "favoredReligion": "Christianity",
-        "uniqueName": "Fertile Lands",
+        "uniqueName": "Fertile Lands", // todo - 'down under'
         "uniques": [
             "Double quantity of [Wheat] produced",
             "Double quantity of [Iron] produced",
