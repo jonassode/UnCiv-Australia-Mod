@@ -13,14 +13,14 @@
 		"declaringWar": "That land of yours? Mine.",
 		"attacked": "Unfair Dinkum!",
 		"defeated": "I'm going for a swim.",
-		"introduction": "G'day Mate! I'm Harold Holt",
+		"introduction": "G'day Mate! I'm Harold Holt pleasure to meet ya.",
 		
 		"neutralHello": "G'day!",
-		"hateHello": "Wadda you want, you yellow bellied bastard?",
-		"tradeRequest": "Tradies?",
+		"hateHello": "Wadda you want, you yellow bellied bastards?",
+		"tradeRequest": "Swapsies?",
 		
-		"outerColor": [0,0,255], // todo 
-		"innerColor": [255,255,0], // todo
+		"outerColor": [0, 132, 61], // Green
+		"innerColor": [255, 205, 0], // Gold
 		
 		"favoredReligion": "Christianity",
 		
@@ -31,10 +31,36 @@
 			    "Double quantity of [Horses] produced"
 			   ],
 		"cities": [
-			"Canberra",
-			"Melbourne",
-      "Sydney",
-      "Adelaide"
+"Canberra",
+			"Sydney",
+"Melbourne",
+"Brisbane",
+"Perth",
+"Adelaide",
+"Hobart",
+"Darwin",
+"Gold Coast",
+"Newcastle",
+"Sunshine Coast",
+"Central Coast",
+"Wollongong",
+"Geelong",
+"Townsville",
+"Cairns",
+"Toowoomba",
+"Ballarat",
+"Bendigo",
+"Albury-Wodonga",
+"Launceston",
+"Mackay",
+"Rockhampton",
+"Bunbury",
+"Bundaberg",
+"Coffs Harbour",
+"Hervey Bay",
+"Wagga Wagga",
+"Shepparton-Mooroopna",
+"Mildura-Buronga"
 		],
 	},
 ]
