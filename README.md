@@ -15,3 +15,40 @@ Todo list
   - Koaloas, forest, camp?
 - New tile improvents?
 - 
+
+
+ Ideas
+
+**Unique Ability: "Land Down Under"**
+- +1 Food and +1 Production on all tiles adjacent to coast or desert.
+- Cities founded on or next to desert tiles receive additional Science.
+
+**Unique Unit: "Digger"**  
+- Replaces Infantry.
+- Receives combat bonuses when fighting on desert, plains, or coastal tiles.
+- Gains additional defense in friendly territory.
+
+**Unique Improvement: "Outback Station"**  
+- Can be built on desert and plains.
+- Provides Food and Production; extra bonuses if adjacent to sheep or cattle.
+- Later gains Gold when Railroad technology is unlocked.
+
+**Unique Building: "Surf Club"**  
+- Replaces the Lighthouse.
+- Provides extra Happiness and Gold in coastal cities, in addition to the usual food bonus.
+
+**Special City State Interaction: "Federation Ties"**  
+- Gains double Influence from completing quests for city-states.
+- City-state allies occasionally gift unique Australian resources (like sheep, cattle, or uranium).
+
+**Natural Wonder Synergy:**
+- Settling near Natural Wonders gives bonus Culture and Tourism, reflecting Australia’s famous natural landmarks like Uluru and the Great Barrier Reef.
+
+**Unique Resource: "Opals"**
+- Provides extra Gold and Happiness; can only be worked by Australian civilization.
+
+**Outback Expansion:**
+- Settlers can move faster on desert, plains, and tundra tiles.
+- No movement penalty for embarking/disembarking between land and sea.
+
+Let me know if you want these expanded or tailored for a specific playstyle!
