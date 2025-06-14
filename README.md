@@ -1,14 +1,17 @@
 # UnCiv-Australia-Mod
 An Australian mod for UnCiv
 
-It's a tounge in check take on Australia
+It's a tounge in check take on Australia, but aims to be balanced and fun to play
 
 Todo list
 - Nation Australia under Harold Hold (in progress)
 - Unique unit digger (in progress)
 - Unique buildings ( in progress )
-- New wonder, Operahouse, Melbourne cricket ground
+- New wonders,
+  - Sydney Operahouse
+  - Melbourne cricket ground
 - New tile resources
-  - Kangaros, paddock
-  - Koaloas, camp
-- New tile 
+  - Kangaros, fields, paddock
+  - Koaloas, forest, camp?
+- New tile improvents?
+- 
