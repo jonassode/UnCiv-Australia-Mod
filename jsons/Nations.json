@@ -17,12 +17,10 @@
         "outerColor": [0, 132, 61],
         "innerColor": [255, 205, 0],
         "favoredReligion": "Christianity",
-        "uniqueName": "Fertile Lands", // todo - 'down under'
+        "uniqueName": "The Lucky Country", // todo - 'down under'
         "uniques": [
-            "Double quantity of [Wheat] produced",
-            "Double quantity of [Iron] produced",
+            "Double quantity of [Sheep] produced",
             "Double quantity of [Coal] produced",
-            "Double quantity of [Horses] produced"
         ],
         "cities": [
             "Canberra",
