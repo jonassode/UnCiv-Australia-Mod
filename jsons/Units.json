@@ -1,16 +1,17 @@
 [
 	{
-		"name": "Diggers", // to do update to replace rifleman instead
-		"unitType": "Gunpowder",
-		"replaces": "Musketman",
+		"name": "Digger",
+		"unitType": "Melee",
 		"uniqueTo": "Australia",
+		"replaces": "Great War Infantry",
 		"movement": 2,
-		"strength": 35,
-		"cost": 200,
-		"requiredTech": "Gunpowder",
-		"upgradesTo": "Rifleman",
-		"obsoleteTech": "Rifling",
-		"uniques": ["+[25]% combat bonus in [Grassland]","+[25]% combat bonus in [Forest]","+[25]% combat bonus in [Plains]"],
+		"strength": 50,
+		"uniques": ["Great General provides double combat bonus", "[+20]% Strength <when fighting in [Foreign Land] tiles>"],
+		"cost": 340,
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 20,
+		"upgradesTo": "Infantry",
+		"obsoleteTech": "Plastics",
 		"attackSound": "shot"
 	},
 ]
