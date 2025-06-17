@@ -6,7 +6,7 @@
 		"replaces": "Great War Infantry",
 		"movement": 2,
 		"strength": 50,
-		"uniques": ["Great General provides double combat bonus", "[+20]% Strength <when fighting in [Foreign Land] tiles>"],
+		"uniques": ["Great General provides double combat bonus", "[+20]% Strength <when fighting in [Hill] tiles>"],
 		"cost": 340,
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 20,
