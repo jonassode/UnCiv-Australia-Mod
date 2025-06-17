@@ -4,9 +4,9 @@ An Australian mod for UnCiv
 It's a tounge in check take on Australia, but aims to be balanced and fun to play
 
 Todo list
-- Nation Australia under Harold Hold (in progress)
-- Unique unit digger (in progress)
-- Unique buildings ( in progress )
+- Nation Australia under Harold Hold (Done)
+- Unique unit digger (Done)
+- Unique building Surf  ( in progress )
 - New wonders,
   - Sydney Operahouse
   - Melbourne cricket ground
@@ -14,19 +14,18 @@ Todo list
   - Kangaros, fields, paddock
   - Koaloas, forest, camp?
 - New tile improvents?
-- 
+  - Outback Station  
 
 
  Ideas
 
-**Unique Ability: "Land Down Under"**
-- +1 Food and +1 Production on all tiles adjacent to coast or desert.
-- Cities founded on or next to desert tiles receive additional Science.
 
-**Unique Unit: "Digger"**  
-- Replaces Infantry.
-- Receives combat bonuses when fighting on desert, plains, or coastal tiles.
-- Gains additional defense in friendly territory.
+**Unique Resource: "Opals"**
+- Provides extra Gold and Happiness;
+
+**Outback Expansion:**
+- Settlers can move faster on desert, plains, and tundra tiles.
+- No movement penalty for embarking/disembarking between land and sea.
 
 **Unique Improvement: "Outback Station"**  
 - Can be built on desert and plains.
@@ -44,11 +43,4 @@ Todo list
 **Natural Wonder Synergy:**
 - Settling near Natural Wonders gives bonus Culture and Tourism, reflecting Australia’s famous natural landmarks like Uluru and the Great Barrier Reef.
 
-**Unique Resource: "Opals"**
-- Provides extra Gold and Happiness; can only be worked by Australian civilization.
 
-**Outback Expansion:**
-- Settlers can move faster on desert, plains, and tundra tiles.
-- No movement penalty for embarking/disembarking between land and sea.
-
-Let me know if you want these expanded or tailored for a specific playstyle!
