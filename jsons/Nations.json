@@ -17,7 +17,7 @@
         "outerColor": [0, 132, 61],
         "innerColor": [255, 205, 0],
         "favoredReligion": "Christianity",
-        "uniqueName": "The Lucky Country", // todo - 'down under'
+        "uniqueName": "The Lucky Country",
         "uniques": [
             "Double quantity of [Sheep] produced",
             "Double quantity of [Coal] produced",
