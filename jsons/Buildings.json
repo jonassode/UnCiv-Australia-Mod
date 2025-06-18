@@ -1,13 +1,22 @@
 [
 	{
-		"name": "Thingy", // update
-		"replaces": "Castle",
-		"cost": 120,
+		"name": "Surf Club",
+		"replaces": "Colosseum",
 		"uniqueTo": "Australia",
-		"cityStrength": 10,
-		"cityHealth": 75,
-		"hurryCostModifier": 50,
-		"requiredBuilding": "Walls",
-		"requiredTech": "Chivalry",
+		"hurryCostModifier": 25,
+		"uniques": ["Must be next to [Coast]", "[+1 Happiness] from [Ocean] tiles [in this city]",
+		"[+1 Happiness] from [Coast] tiles [in this city]" ],
+		"requiredTech": "Optics",
+	},
+	{
+		"name": "Australian National Surfing Museum",
+		"replaces": "Circus Maximus",
+		"uniqueTo": "Australia",
+		"cost": 125,
+		"happiness": 5,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": ["Only available <if [Surf Club] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"],
+		"requiredTech": "Construction"
 	},
 ]
