@@ -9,7 +9,7 @@ If you like this Mod, give it a ⭐
 
 If you find any problems or have feature requests, don't hesitate to raise an issue
 
-# New Features
+# Features
 
 **New Nation Australia under Harold Hold** 
   - New Icon based on the Souther Cross
