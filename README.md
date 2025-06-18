@@ -6,6 +6,7 @@ It adds the Nation of Austrlia under Harold Holt, with unique features, unit and
 I also hope to add some things inspired by Australia but useable by everyone like new resources, natural wonder enhacments buildings and Wonders
 
 If you like this Mod, give it a ⭐
+
 If you find any problems or have feature requests, don't hesitate to raise an issue
 
 # New Features
