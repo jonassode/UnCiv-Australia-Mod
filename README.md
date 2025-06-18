@@ -14,9 +14,8 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 **New Nation Australia under Harold Hold** 
   - New Icon based on the Souther Cross
   - List of Australian Cities
-
-**Unique Feature "The Lucky Country"**
-  - Bonus Coal and Sheep
+  - Unique Feature "The Lucky Country"
+    - Bonus Coal and Sheep
 
 **Unique unit "Digger"**
   - New Icon based on the iconic Anzac hats
