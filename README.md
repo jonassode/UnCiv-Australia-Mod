@@ -12,7 +12,8 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 # New Features
 
 New Nation Australia under Harold Hold
-- Unique Feature "The Lucky Country"
+
+Unique Feature "The Lucky Country"
 
 Unique unit "Digger"
 
