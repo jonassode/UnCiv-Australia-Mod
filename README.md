@@ -18,7 +18,7 @@ If you find any problems or have feature requests, don't hesitate to raise an is
     - Bonus Coal and Sheep
 
 **Unique units**
-  - "Digger", with Icon based on the iconic Anzac hats
+  - "Digger", with new Icon based on the iconic Anzac hats
 
 **Unique building**
   - "Surf Club", Extra Happiness on Coast Tiles
@@ -30,14 +30,15 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Melbourne cricket ground
   - Sydney Harbour Bridge
   - The Big Pineapple
+  - Shrine of Remembrance
 - New natural wonder enhancers
   - Voice of the First Nations - Uluru
   - Diving Center - Great Barrier Reef
 - New tile resources
   - Kangaros, fields, paddock
   - Koaloas, forest, camp
-  - Waves, Coast ?
   - Opals, Hills Mines
+  - Waves, Coast ?
 
 # Ideas
 
