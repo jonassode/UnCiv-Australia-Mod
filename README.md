@@ -2,23 +2,33 @@
 An Australian mod for UnCiv
 
 It's a tounge in check take on Australia, but aims to be balanced and fun to play
+It adds the Nation of Austrlia under Harold Holt, with unique features, unit and buldings. 
+I also hope to add some things inspired by Australia but useable by everyone like new resources, natural wonder enhacments buildings and Wonders
 
-Todo list
-- Nation Australia under Harold Hold (Done)
-- Unique unit digger (Done)
-- Unique building Surf  ( in progress )
-- New wonders,
-  - Sydney Operahouse
+# New Features
+
+New Nation Australia under Harold Hold
+- Unique Feature "The Lucky Country"
+Unique unit "Digger"
+Unique building "Surf Club"
+Unique National Wonder "Australian National Surf Museum"
+
+# Todo list
+
+- New wonders
   - Melbourne cricket ground
+  - Sydney Harbour Bridge
+  - The Big Pineapple
+- New natural wonder enhancers
+  - Voice of the First Nations - Uluru
+  - Diving Center - Great Barrier Reef
 - New tile resources
   - Kangaros, fields, paddock
   - Koaloas, forest, camp?
 - New tile improvents?
   - Outback Station  
 
-
- Ideas
-
+# Ideas
 
 **Unique Resource: "Opals"**
 - Provides extra Gold and Happiness;
@@ -31,10 +41,6 @@ Todo list
 - Can be built on desert and plains.
 - Provides Food and Production; extra bonuses if adjacent to sheep or cattle.
 - Later gains Gold when Railroad technology is unlocked.
-
-**Unique Building: "Surf Club"**  
-- Replaces the Lighthouse.
-- Provides extra Happiness and Gold in coastal cities, in addition to the usual food bonus.
 
 **Special City State Interaction: "Federation Ties"**  
 - Gains double Influence from completing quests for city-states.
