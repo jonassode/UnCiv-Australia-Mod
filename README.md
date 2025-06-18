@@ -17,14 +17,12 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Unique Feature "The Lucky Country"
     - Bonus Coal and Sheep
 
-**Unique unit "Digger"**
-  - New Icon based on the iconic Anzac hats
+**Unique units**
+  - "Digger", with Icon based on the iconic Anzac hats
 
-**Unique building "Surf Club"**
-  - Extra Happiness on Coast Tiles
-
-**Unique National Wonder "Australian National Surf Museum"**
-  - Happiness, needs to have Surf Clubs in all cities.
+**Unique building**
+  - "Surf Club", Extra Happiness on Coast Tiles
+  - "Australian National Surf Museum", National Wonder which give extra Happiness, needs to have Surf Clubs in all cities.
 
 # Todo list
 
