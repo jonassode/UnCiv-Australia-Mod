@@ -4,8 +4,10 @@
 		"replaces": "Colosseum",
 		"uniqueTo": "Australia",
 		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Coast]", "[+1 Happiness] from [Ocean] tiles [in this city]",
-		"[+1 Happiness] from [Coast] tiles [in this city]" ],
+		"uniques": [
+			"Must be next to [Coast]",
+			"[+1 Happiness] from [Coast] tiles [in this city]" 
+		],
 		"requiredTech": "Optics",
 	},
 	{
@@ -16,7 +18,10 @@
 		"happiness": 5,
 		"culture": 1,
 		"isNationalWonder": true,
-		"uniques": ["Only available <if [Surf Club] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [30] per owned city"],
+		"uniques": [
+			"Only available <if [Surf Club] is constructed in all [non-[Puppeted]] cities>", 
+			"Cost increases by [30] per owned city"
+		],
 		"requiredTech": "Construction"
 	},
 ]
