@@ -9,8 +9,11 @@ I also hope to add some things inspired by Australia but useable by everyone lik
 
 New Nation Australia under Harold Hold
 - Unique Feature "The Lucky Country"
+
 Unique unit "Digger"
+
 Unique building "Surf Club"
+
 Unique National Wonder "Australian National Surf Museum"
 
 # Todo list
