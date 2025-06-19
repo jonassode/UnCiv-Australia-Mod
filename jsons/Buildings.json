@@ -11,7 +11,7 @@
 		"requiredTech": "Optics",
 	},
 	{
-		"name": "Australian National Surfing Museum",
+		"name": "National Surfing Museum",
 		"replaces": "Circus Maximus",
 		"uniqueTo": "Australia",
 		"cost": 125,
