@@ -39,6 +39,9 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Koaloas, forest, camp
   - Opals, Hills Mines
   - Waves, Coast ?
+- New City States
+  - Tuvalu
+  - Samoa  
 
 # Ideas
 
