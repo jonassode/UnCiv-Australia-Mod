@@ -22,7 +22,7 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 
 **Unique buildings**
   - "Surf Club", Extra Happiness on Coast Tiles
-  - "Australian National Surf Museum", National Wonder which give extra Happiness, requires Surf Clubs in all cities.
+  - "National Surf Museum", National Wonder which give extra Happiness, requires Surf Clubs in all cities.
 
 # Todo list
 
