@@ -60,7 +60,7 @@ jobs:
           if [ "$images_found" = true ]; then
             echo "Generating atlas from staged images..."
             mkdir -p output
-            free-tex-packer-cli --source staging_dir --dest output --name atlas
+            free-tex-packer-cli --project staging_dir --dest output --name atlas
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
           fi
@@ -72,5 +72,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: Update tilemap and atlas"
-          directory: output
-          file_pattern: atlas.png atlas.json
+          file_pattern: output/atlas.png output/atlas.json
