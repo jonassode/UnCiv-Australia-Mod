@@ -32,39 +32,44 @@ jobs:
         with:
           node-version: '18'
 
-      # Step 3: Install the 'atlast' tool
-      # 'atlast' is a command-line tool for creating texture atlases (sprite sheets).
-      # We install it globally so we can use it from the command line.
-      - name: Install atlast
-        run: npm install -g atlast
+      # Step 3: Install Free Texture Packer
+      # We are using 'free-tex-packer-cli', a robust command-line tool for creating texture atlases.
+      - name: Install Free Texture Packer
+        run: npm install -g free-tex-packer-cli
 
-      # Step 4: Run atlast to generate the tilemap and atlas
-      # This is the core step of the workflow.
-      #
-      # - It first creates a temporary 'staging' directory.
-      # - It then loops through the list of directories defined in the IMAGE_DIRS environment variable.
-      # - All images from these directories are copied into the staging directory.
-      # - Finally, 'atlast' is run on the staging directory to produce a single combined tilemap and atlas.
+      # Step 4: Generate the tilemap and atlas
+      # - It creates a temporary 'staging' directory to collect all images.
+      # - It loops through the directories in IMAGE_DIRS and copies images to the staging area.
+      # - It checks if any images were found before attempting to generate the atlas.
+      # - Finally, 'free-tex-packer-cli' is run on the staging directory.
       - name: Generate tilemap and atlas
         run: |
           mkdir -p staging_dir
+          images_found=false
           for dir in $IMAGE_DIRS; do
-            echo "Scanning directory: $dir"
-            # Copy all image files from the source directory to the staging directory
-            # Using find to handle cases where the directory might be empty.
-            find $dir -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" | xargs -I {} cp {} staging_dir/
+            # Check if directory exists and has images
+            if [ -d "$dir" ] && [ -n "$(find "$dir" -maxdepth 1 -name '*.png' -o -name '*.jpg' -o -name '*.jpeg')" ]; then
+              echo "Copying images from $dir..."
+              find "$dir" -maxdepth 1 -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -exec cp {} staging_dir/ \;
+              images_found=true
+            else
+              echo "Warning: Directory '$dir' is empty or does not exist."
+            fi
           done
-          mkdir -p output
-          atlast staging_dir output
+
+          if [ "$images_found" = true ]; then
+            echo "Generating atlas from staged images..."
+            mkdir -p output
+            free-tex-packer-cli --source staging_dir --dest output --name atlas
+          else
+            echo "No images found in any of the specified directories. Skipping atlas generation."
+          fi
 
       # Step 5: Commit the generated files to the repository
       # This step will add the 'atlas.png' and 'atlas.json' to your repo.
       # It will only create a commit if the files have changed.
       - name: Commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add output/atlas.png output/atlas.json
-          # The following command will fail if there are no changes, so we add `|| exit 0`
-          git commit -m "Update tilemap and atlas" -a || exit 0
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: Update tilemap and atlas"
+          file_pattern: output/atlas.png output/atlas.json
