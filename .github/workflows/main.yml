@@ -78,7 +78,6 @@ jobs:
             atlast set outputAsJS no
             atlast 
             echo "Complete"
-            exit
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
           fi
