@@ -72,6 +72,7 @@ jobs:
             atlast set sepW 0
             atlast set sepH 0
             atlast set verticalPlacement false
+            atlast set outputAsJS no
             atlast 
             echo "Complete"
             exit
