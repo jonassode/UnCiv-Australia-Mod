@@ -67,9 +67,10 @@ jobs:
           if [ "$images_found" = true ]; then
             echo "Generating atlas from staged images..."
             mkdir -p output
-            atlast set directory 'Images'
-            atlast set outputImageName 'output/atlas.png'
-            atlast set outputJSONName 'output/atlas.json'
+            cd staging_dir
+            atlast set directory '.'
+            atlast set outputImageName './output/atlas.png'
+            atlast set outputJSONName './output/atlas.json'
             atlast set atlasWidth 100
             atlast set atlasHeight counter*100
             atlast set sepW 0
@@ -78,6 +79,7 @@ jobs:
             atlast set outputAsJS no
             atlast 
             echo "Complete"
+            cd ..
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
           fi
