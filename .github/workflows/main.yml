@@ -65,6 +65,7 @@ jobs:
             atlast set directory 'staging_dir'
             atlast set outputImageName 'output/atlas.png'
             atlast set outputJSONName 'output/atlas.json'
+            atlast set atlasWidth 400
             atlast 
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
