@@ -71,6 +71,7 @@ jobs:
             atlast set atlasHeight counter*100
             atlast set sepW 0
             atlast set sepH 0
+            atlast set verticalPlacement false
             atlast 
             echo "Complete"
             exit
