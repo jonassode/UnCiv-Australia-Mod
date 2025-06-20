@@ -32,10 +32,11 @@ jobs:
         with:
           node-version: '18'
 
-      # Step 3: Install Free Texture Packer
-      # We are using 'free-tex-packer-cli', a robust command-line tool for creating texture atlases.
-      - name: Install Free Texture Packer
-        run: npm install -g free-tex-packer-cli
+      # Step 3: Install the 'atlast' tool
+      # 'atlast' is a command-line tool for creating texture atlases (sprite sheets).
+      # We install it globally so we can use it from the command line.
+      - name: Install atlast
+        run: npm install -g atlast
 
       # Step 4: Generate the tilemap and atlas
       # - It creates a temporary 'staging' directory to collect all images.
@@ -60,7 +61,7 @@ jobs:
           if [ "$images_found" = true ]; then
             echo "Generating atlas from staged images..."
             mkdir -p output
-            free-tex-packer-cli --project staging_dir --dest output --name atlas
+            atlast staging_dir/*.png -o output/atlas.png -m output/atlas.json
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
           fi
