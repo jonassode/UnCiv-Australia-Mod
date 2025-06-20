@@ -44,7 +44,7 @@ jobs:
       # - It checks if any images were found before attempting to generate the atlas.
       # - Finally, 'free-tex-packer-cli' is run on the staging directory.
       - name: Generate tilemap and atlas
-        # - shell: 'script -q -e -c "bash {0}"'
+        shell: 'script -q -e -c "bash {0}"'
         run: |
           counter=0
           mkdir -p staging_dir
