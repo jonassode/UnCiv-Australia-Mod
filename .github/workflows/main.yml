@@ -62,7 +62,7 @@ jobs:
           done
 
           echo "listing files"
-          ls staging_dir
+          ls .
 
           if [ "$images_found" = true ]; then
             echo "Generating atlas from staged images..."
