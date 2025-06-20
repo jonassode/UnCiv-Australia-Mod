@@ -69,6 +69,8 @@ jobs:
             atlast set outputJSONName 'output/atlas.json'
             atlast set atlasWidth 100
             atlast set atlasHeight counter*100
+            atlast set sepW 0
+            atlast set sepH 0
             atlast 
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
