@@ -72,6 +72,8 @@ jobs:
             atlast set sepW 0
             atlast set sepH 0
             atlast 
+            echo "Complete"
+            exit
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
           fi
