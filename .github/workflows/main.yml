@@ -53,7 +53,7 @@ jobs:
             # Check if directory exists and has images
             if [ -d "$dir" ] && [ -n "$(find "$dir" -maxdepth 1 -name '*.png' -o -name '*.jpg' -o -name '*.jpeg')" ]; then
               echo "Copying images from $dir..."
-              find "$dir" -maxdepth 1 -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -exec cp {} staging_dir/ \;
+              cp $dir/*.png staging_dir  
               images_found=true
               let counter++
             else
@@ -62,7 +62,7 @@ jobs:
           done
 
           echo "listing files"
-          ls .
+          ls staging_dir
 
           if [ "$images_found" = true ]; then
             echo "Generating atlas from staged images..."
