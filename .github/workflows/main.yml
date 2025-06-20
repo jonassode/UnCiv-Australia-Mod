@@ -46,6 +46,7 @@ jobs:
       - name: Generate tilemap and atlas
         shell: 'script -q -e -c "bash {0}"'
         run: |
+          counter=0
           mkdir -p staging_dir
           images_found=false
           for dir in $IMAGE_DIRS; do
@@ -54,6 +55,7 @@ jobs:
               echo "Copying images from $dir..."
               find "$dir" -maxdepth 1 -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -exec cp {} staging_dir/ \;
               images_found=true
+              let counter++
             else
               echo "Warning: Directory '$dir' is empty or does not exist."
             fi
@@ -65,7 +67,8 @@ jobs:
             atlast set directory 'staging_dir'
             atlast set outputImageName 'output/atlas.png'
             atlast set outputJSONName 'output/atlas.json'
-            atlast set atlasWidth 400
+            atlast set atlasWidth 100
+            atlast set atlasHeight counter*100
             atlast 
           else
             echo "No images found in any of the specified directories. Skipping atlas generation."
