@@ -12,7 +12,7 @@ on:
 
 jobs:
   generate-tilemap:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     
     # Environment variables can be used to easily configure the workflow.
     # Add the paths to your image folders here, separated by spaces.
