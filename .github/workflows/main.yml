@@ -46,6 +46,8 @@ jobs:
       - name: Generate tilemap and atlas
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
+          pwd
+          ls -R
           $counter = 0
           New-Item -ItemType Directory -Force -Path staging_dir
           $images_found = $false
