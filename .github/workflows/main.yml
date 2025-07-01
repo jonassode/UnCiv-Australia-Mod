@@ -46,43 +46,48 @@ jobs:
       - name: Generate tilemap and atlas
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          counter=0
-          mkdir -p staging_dir
-          images_found=false
-          for dir in $IMAGE_DIRS; do
+          $counter = 0
+          New-Item -ItemType Directory -Force -Path staging_dir
+          $images_found = $false
+          $IMAGE_DIRS = $env:IMAGE_DIRS -split ' '
+        
+          foreach ($dir in $IMAGE_DIRS) {
             # Check if directory exists and has images
-            if [ -d "$dir" ] && [ -n "$(find "$dir" -maxdepth 1 -name '*.png' -o -name '*.jpg' -o -name '*.jpeg')" ]; then
-              echo "Copying images from $dir..."
-              cp $dir/*.png staging_dir  
-              images_found=true
-              let counter++
-            else
-              echo "Warning: Directory '$dir' is empty or does not exist."
-            fi
-          done
-
-          echo "listing files"
-          ls staging_dir
-
-          if [ "$images_found" = true ]; then
-            echo "Generating atlas from staged images..."
-            mkdir -p output
-            cd staging_dir
+            $imageFiles = Get-ChildItem -Path $dir -File -Include *.png, *.jpg, *.jpeg -ErrorAction SilentlyContinue
+            if ((Test-Path -Path $dir -PathType Container) -and ($imageFiles.Count -gt 0)) {
+              Write-Host "Copying images from $dir..."
+              Copy-Item -Path (Join-Path $dir "*.png") -Destination staging_dir
+              Copy-Item -Path (Join-Path $dir "*.jpg") -Destination staging_dir
+              Copy-Item -Path (Join-Path $dir "*.jpeg") -Destination staging_dir
+              $images_found = $true
+              $counter++
+            } else {
+              Write-Host "Warning: Directory '$dir' is empty or does not exist."
+            }
+          }
+        
+          Write-Host "listing files"
+          Get-ChildItem -Path staging_dir
+        
+          if ($images_found) {
+            Write-Host "Generating atlas from staged images..."
+            New-Item -ItemType Directory -Force -Path output
+            Set-Location -Path staging_dir
             atlast set directory '.'
             atlast set outputImageName './output/atlas.png'
             atlast set outputJSONName './output/atlas.json'
             atlast set atlasWidth 100
-            atlast set atlasHeight counter*100
+            atlast set atlasHeight ($counter * 100) # PowerShell multiplication
             atlast set sepW 0
             atlast set sepH 0
             atlast set verticalPlacement false
             atlast set outputAsJS no
-            atlast 
-            echo "Complete"
-            cd ..
-          else
-            echo "No images found in any of the specified directories. Skipping atlas generation."
-          fi
+            atlast
+            Write-Host "Complete"
+            Set-Location -Path ..
+          } else {
+            Write-Host "No images found in any of the specified directories. Skipping atlas generation."
+          }
 
       # Step 5: Commit the generated files to the repository
       # This step will add the 'atlas.png' and 'atlas.json' to your repo.
