@@ -17,7 +17,7 @@ jobs:
     # Environment variables can be used to easily configure the workflow.
     # Add the paths to your image folders here, separated by spaces.
     env:
-      IMAGE_DIRS: "Images/NationIcons Images/UnitIcons"
+      IMAGE_DIRS: "Images\\NationIcons Images\\UnitIcons"
 
     steps:
       # Step 1: Check out your repository code
