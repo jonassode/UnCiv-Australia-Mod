@@ -46,8 +46,6 @@ jobs:
       - name: Generate tilemap and atlas
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          pwd
-          ls -R
           $counter = 0
           New-Item -ItemType Directory -Force -Path staging_dir
           $images_found = $false
@@ -55,7 +53,7 @@ jobs:
         
           foreach ($dir in $IMAGE_DIRS) {
             # Check if directory exists and has images
-            $imageFiles = Get-ChildItem -Path $dir -File -Include *.png, *.jpg, *.jpeg -ErrorAction SilentlyContinue
+            $imageFiles = Get-ChildItem -Path $dir -File -Include *.png, *.jpg, *.jpeg -Recurse -ErrorAction SilentlyContinue
             if ((Test-Path -Path $dir -PathType Container) -and ($imageFiles.Count -gt 0)) {
               Write-Host "Copying images from $dir..."
               Copy-Item -Path (Join-Path $dir "*.png") -Destination staging_dir
