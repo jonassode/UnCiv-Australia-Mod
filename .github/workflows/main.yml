@@ -78,8 +78,8 @@ jobs:
             atlast set outputJSONName './output/atlas.json'
             atlast set atlasWidth 100
             atlast set atlasHeight ($counter * 100) # PowerShell multiplication
-            atlast set sepW 0
-            atlast set sepH 0
+            atlast set sepW 100
+            atlast set sepH 100
             atlast set verticalPlacement false
             atlast set outputAsJS no
             atlast
