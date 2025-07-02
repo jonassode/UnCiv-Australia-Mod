@@ -50,4 +50,11 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 - Provides Food and Production; extra bonuses if adjacent to sheep or cattle.
 - Later gains Gold when Railroad technology is unlocked.
 
+# Todo
 
+- Pause workflow
+- Upload script to repo
+- Rewrite to find in the correct folders and copy to staging,
+- Add staging to git ignore
+- Add instructions to run locally
+- Do a surf shack image, test upload and run
