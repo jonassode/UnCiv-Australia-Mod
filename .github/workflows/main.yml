@@ -76,10 +76,10 @@ jobs:
             atlast set directory '.'
             atlast set outputImageName './output/atlas.png'
             atlast set outputJSONName './output/atlas.json'
-            atlast set atlasWidth 100
-            atlast set atlasHeight 200
-            atlast set sepW 100
-            atlast set sepH 100
+            atlast set atlasWidth 200
+            atlast set atlasHeight 300
+            atlast set sepW 1
+            atlast set sepH 1
             atlast set verticalPlacement false
             atlast set outputAsJS no
             atlast
