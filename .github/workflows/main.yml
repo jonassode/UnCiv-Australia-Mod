@@ -74,8 +74,8 @@ jobs:
             New-Item -ItemType Directory -Force -Path output
             Set-Location -Path staging_dir
             atlast set directory '.'
-            atlast set outputImageName './output/atlas.png'
-            atlast set outputJSONName './output/atlas.json'
+            atlast set outputImageName 'atlas.png'
+            atlast set outputJSONName 'atlas.json'
             atlast set atlasWidth 200
             atlast set atlasHeight 300
             atlast set sepW 1
