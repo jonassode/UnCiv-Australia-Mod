@@ -78,8 +78,8 @@ jobs:
             atlast set outputJSONName 'atlas.json'
             atlast set atlasWidth 200
             atlast set atlasHeight 300
-            atlast set sepW 1
-            atlast set sepH 1
+            atlast set sepW 100
+            atlast set sepH 100
             atlast set verticalPlacement false
             atlast set outputAsJS no
             atlast
