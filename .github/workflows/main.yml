@@ -77,7 +77,7 @@ jobs:
             atlast set outputImageName './output/atlas.png'
             atlast set outputJSONName './output/atlas.json'
             atlast set atlasWidth 100
-            atlast set atlasHeight ($counter * 100) # PowerShell multiplication
+            atlast set atlasHeight 200 # PowerShell multiplication
             atlast set sepW 100
             atlast set sepH 100
             atlast set verticalPlacement false
