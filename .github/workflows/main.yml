@@ -4,11 +4,11 @@ name: Create Tilemap and Atlas
 # Controls when the action will run. 
 # This example triggers the workflow on push events to the "main" branch.
 # You can change this to run on a schedule, on pull requests, or manually.
-on:
+# on:
   # push:
     # branches:
       # - main
-workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+# workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
   generate-tilemap:
