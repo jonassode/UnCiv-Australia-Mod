@@ -52,7 +52,7 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 
 # Todo
 
-- Pause workflow
+- Pause workflow (done)
 - Upload script to repo
 - Rewrite to find in the correct folders and copy to staging,
 - Add staging to git ignore
