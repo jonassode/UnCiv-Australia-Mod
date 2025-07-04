@@ -82,5 +82,5 @@ async function createSpritesheet() {
     }
 }
 
-// Call the main function to start the spritesheet creation process.
+// Call the main function to start the spritesheet creation process
 createSpritesheet();
