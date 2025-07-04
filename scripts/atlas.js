@@ -72,7 +72,7 @@ async function createSpritesheet() {
             yOffset += image.bitmap.height;
         }
 
-        // Save the final spritesheet image to the specified output path.
+        // Save the final spritesheet image to the specified output path
         await spritesheet.write(outputFilePath);
         console.log(`Spritesheet created successfully at: ${outputFilePath}`);
 
