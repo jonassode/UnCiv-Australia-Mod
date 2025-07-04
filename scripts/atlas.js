@@ -77,7 +77,7 @@ async function createSpritesheet() {
         console.log(`Spritesheet created successfully at: ${outputFilePath}`);
 
     } catch (error) {
-        // Catch and log any errors that occur during the process.
+        // Catch and log any errors that occur during the process
         console.error('Error creating spritesheet:', error);
     }
 }
