@@ -4,7 +4,7 @@ const path = require('path');
 
 // Define the directory where your source images are located.
 // __dirname refers to the directory of the current script file.
-const imageDirectory = path.join(__dirname, './Images');
+const imageDirectory = path.join(__dirname, '../Images');
 // Define the name of the output spritesheet file.
 const outputFileName = 'game2.png';
 // Construct the full path for the output spritesheet.
@@ -34,6 +34,21 @@ async function getImageFilesRecursively(dir) {
 }
 
 /**
+ * Attempts to read an image file using Jimp
+ * @param {string} imagePath - Path to the image file
+ * @returns {Promise<Jimp>} The loaded Jimp image
+ * @throws {Error} If the image cannot be loaded
+ */
+async function loadImage(imagePath) {
+    try {
+        const image = await Jimp.read(imagePath);
+        return image;
+    } catch (error) {
+        throw new Error(`Failed to load image at ${imagePath}: ${error.message}`);
+    }
+}
+
+/**
  * Asynchronously creates a spritesheet from images found in a specified directory
  * and its subdirectories. The images are stacked vertically in the spritesheet.
  */
@@ -59,13 +74,18 @@ async function createSpritesheet() {
 
         // Loop through each image file to load it and calculate overall dimensions
         for (const imagePath of imageFiles) {
-            const image = await Jimp.read(imagePath);         // Load the image using Jimp
-            images.push(image);                               // Add the loaded image to our array
+            try {
+                const image = await loadImage(imagePath);
+                images.push(image);
 
-            // Update maxWidth if the current image is wider
-            maxWidth = Math.max(maxWidth, image.bitmap.width);
-            // Add the current image's height to totalHeight
-            totalHeight += image.bitmap.height;
+                // Update maxWidth if the current image is wider
+                maxWidth = Math.max(maxWidth, image.bitmap.width);
+                // Add the current image's height to totalHeight
+                totalHeight += image.bitmap.height;
+            } catch (error) {
+                console.error(error.message);
+                throw new Error('Spritesheet creation aborted due to image loading errors');
+            }
         }
 
         // Create a new blank Jimp image for the spritesheet
@@ -87,7 +107,8 @@ async function createSpritesheet() {
 
     } catch (error) {
         // Catch and log any errors that occur during the process
-        console.error('Error creating spritesheet:', error);
+        console.error('Error creating spritesheet:', error.message);
+        process.exit(1); // Exit with error code
     }
 }
 
