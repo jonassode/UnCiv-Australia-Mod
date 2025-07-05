@@ -6,7 +6,7 @@ const path = require('path');
 // __dirname refers to the directory of the current script file.
 const imageDirectory = path.join(__dirname, '../Images');
 // Define the name of the output spritesheet file.
-const outputFileName = 'game2.png';
+const outputFileName = '../game.png';
 // Construct the full path for the output spritesheet.
 const outputFilePath = path.join(__dirname, outputFileName);
 
