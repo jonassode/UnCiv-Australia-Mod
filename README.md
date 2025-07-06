@@ -53,8 +53,11 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 # Todo
 
 - Pause workflow (done)
-- Upload script to repo
-- Rewrite to find in the correct folders and copy to staging,
-- Add staging to git ignore
-- Add instructions to run locally
-- Do a surf shack image, test upload and run
+- Upload script to repo(done)
+- Rewrite to find in the correct folders (done)
+- Do a surf shack image, test upload and run (done)
+- Add instructions to run locally 
+- Make museum picture bigger
+- Add preview image
+- Make mod findable
+
