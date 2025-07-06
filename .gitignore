@@ -1,1 +1,9 @@
 .idea
+.DS_Store
+Images/.DS_Store
+Images/BuildingIcons/.DS_Store
+Images/BuildingIcons/*~
+node_modules/
+package-lock.json
+package.json
+scripts/.DS_Store

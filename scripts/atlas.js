@@ -41,8 +41,7 @@ async function getImageFilesRecursively(dir) {
  */
 async function loadImage(imagePath) {
     try {
-        const image = await Jimp.read(imagePath);
-        return image;
+        return await Jimp.read(imagePath);
     } catch (error) {
         throw new Error(`Failed to load image at ${imagePath}: ${error.message}`);
     }
