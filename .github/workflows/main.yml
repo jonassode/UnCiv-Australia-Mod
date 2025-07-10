@@ -47,5 +47,6 @@ jobs:
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: "chore: Update tilemap and atlas"
           file_pattern: game.png
