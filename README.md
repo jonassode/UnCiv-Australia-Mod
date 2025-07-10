@@ -40,8 +40,16 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Opals, Hills Mines
   - Waves, Coast ?
 - New City States
+  - Kiribati
+  - Marshall Islands
+  - Micronesia (Federated States of)
+  - Palau
   - Tuvalu
-  - Samoa
+  - Solomon Islands (While Guadalcanal is mentioned as a potential city-state in some discussions, the Solomon Islands as a whole are not a distinct Civ 5 nation-state or main city-state.)
+  - Tonga (Often grouped under the "Polynesia" civilization, but not a distinct Civ 5 nation-state itself)
+  - Samoa (Similar to Tonga, often represented by "Polynesia")
+  - Cook Islands (Associated with New Zealand, but a self-governing island nation)
+  - Niue (Associated with New Zealand, but a self-governing island nation)
 - New Natural Wonders
   - Twelve Apostles (Victoria): Iconic limestone stacks off the coast of Victoria, part of the Great Ocean Road.
   - Ningaloo Reef (Western Australia): The world's largest fringing reef, known for whale sharks and being easily accessible from the shore.
@@ -72,12 +80,11 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 
 # Todo
 
-- Pause workflow (done)
-- Upload script to repo(done)
-- Rewrite to find in the correct folders (done)
-- Do a surf shack image, test upload and run (done)
-- Add instructions to run locally 
-- Make museum picture bigger
+- Add instructions to run locally
+- Make script handle more sizes that just down
+- Make script output the text file as well
+- Make museum picture bigger (done)
+- New hut image
 - Add preview image
 - Make mod findable
 
