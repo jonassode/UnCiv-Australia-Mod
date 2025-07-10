@@ -10,6 +10,9 @@ on:
       - main
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
+permissions:
+  contents: write
+
 jobs:
   generate-tilemap:
     runs-on: ubuntu-latest
