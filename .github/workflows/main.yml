@@ -27,6 +27,10 @@ jobs:
         with:
           node-version: '18'
 
+      # Step 3: Install the 'jimp' tool
+      - name: Install jimp
+        run: npm install -g jimp
+
       # Step 4: Generate the tilemap and atlas
       # - It creates a temporary 'staging' directory to collect all images.
       # - It loops through the directories in IMAGE_DIRS and copies images to the staging area.
