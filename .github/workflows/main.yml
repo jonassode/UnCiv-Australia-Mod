@@ -42,10 +42,10 @@ jobs:
           node ./scripts/atlas.js
 
       # Step 5: Commit the generated files to the repository
-      # This step will add the 'atlas.png' and 'atlas.json' to your repo.
+      # This step will add the 'game.png'
       # It will only create a commit if the files have changed.
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: Update tilemap and atlas"
-          file_pattern: output/atlas.png output/atlas.json
+          file_pattern: game.png
