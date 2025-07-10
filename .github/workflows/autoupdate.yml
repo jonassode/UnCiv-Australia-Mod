@@ -45,7 +45,3 @@ jobs:
       - name: Remove Unciv executable
         run: rm Unciv.jar
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: Autoupdate
