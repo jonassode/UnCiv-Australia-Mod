@@ -1,23 +1,18 @@
 # .github/workflows/create_tilemap.yml
-name: Create Tilemap and Atlas
+name: Create Tilemap
 
 # Controls when the action will run. 
 # This example triggers the workflow on push events to the "main" branch.
 # You can change this to run on a schedule, on pull requests, or manually.
 on:
   push:
-    # branches:
-      # - main
+    branches:
+      - main
 
 jobs:
   generate-tilemap:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
-    # Environment variables can be used to easily configure the workflow.
-    # Add the paths to your image folders here, separated by spaces.
-    env:
-      IMAGE_DIRS: "Images\\NationIcons Images\\UnitIcons"
-
     steps:
       # Step 1: Check out your repository code
       # This allows the workflow to access the files in your repo.
@@ -31,62 +26,15 @@ jobs:
         with:
           node-version: '18'
 
-      # Step 3: Install the 'atlast' tool
-      # 'atlast' is a command-line tool for creating texture atlases (sprite sheets).
-      # We install it globally so we can use it from the command line.
-      - name: Install atlast
-        run: npm install -g atlast
-
       # Step 4: Generate the tilemap and atlas
       # - It creates a temporary 'staging' directory to collect all images.
       # - It loops through the directories in IMAGE_DIRS and copies images to the staging area.
       # - It checks if any images were found before attempting to generate the atlas.
       # - Finally, 'free-tex-packer-cli' is run on the staging directory.
-      - name: Generate tilemap and atlas
+      - name: Generate tilemap
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          $counter = 0
-          New-Item -ItemType Directory -Force -Path staging_dir
-          $images_found = $false
-          $IMAGE_DIRS = $env:IMAGE_DIRS -split ' '
-        
-          foreach ($dir in $IMAGE_DIRS) {
-            # Check if directory exists and has images
-            $imageFiles = Get-ChildItem -Path $dir -File -Include *.png, *.jpg, *.jpeg -Recurse -ErrorAction SilentlyContinue
-            if ((Test-Path -Path $dir -PathType Container) -and ($imageFiles.Count -gt 0)) {
-              Write-Host "Copying images from $dir..."
-              Copy-Item -Path (Join-Path $dir "*.png") -Destination staging_dir
-              Copy-Item -Path (Join-Path $dir "*.jpg") -Destination staging_dir
-              Copy-Item -Path (Join-Path $dir "*.jpeg") -Destination staging_dir
-              $images_found = $true
-              $counter++
-            } else {
-              Write-Host "Warning: Directory '$dir' is empty or does not exist."
-            }
-          }
-        
-          Write-Host "listing files"
-          Get-ChildItem -Path staging_dir
-        
-          if ($images_found) {
-            Write-Host "Generating atlas from staged images..."
-            New-Item -ItemType Directory -Force -Path output
-            Set-Location -Path staging_dir
-            atlast set directory '.'
-            atlast set outputImageName 'atlas.png'
-            atlast set outputJSONName 'atlas.json'
-            atlast set atlasWidth 200
-            atlast set atlasHeight 300
-            atlast set sepW 100
-            atlast set sepH 100
-            atlast set verticalPlacement false
-            atlast set outputAsJS no
-            atlast
-            Write-Host "Complete"
-            Set-Location -Path ..
-          } else {
-            Write-Host "No images found in any of the specified directories. Skipping atlas generation."
-          }
+          node ./scripts/atlas.js
 
       # Step 5: Commit the generated files to the repository
       # This step will add the 'atlas.png' and 'atlas.json' to your repo.
