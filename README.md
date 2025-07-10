@@ -41,7 +41,27 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Waves, Coast ?
 - New City States
   - Tuvalu
-  - Samoa  
+  - Samoa
+- New Natural Wonders
+  - Twelve Apostles (Victoria): Iconic limestone stacks off the coast of Victoria, part of the Great Ocean Road.
+  - Ningaloo Reef (Western Australia): The world's largest fringing reef, known for whale sharks and being easily accessible from the shore.
+  - Daintree Rainforest (Queensland): The world's oldest rainforest, with incredible biodiversity.
+  - Kakadu National Park (Northern Territory): A vast wilderness area with diverse landscapes, wildlife, and ancient Aboriginal rock art.
+  - Fraser Island (K'gari) (Queensland): The world's largest sand island, featuring rainforests, freshwater lakes, and unique wildlife.
+  - Bungle Bungle Range (Purnululu National Park, Western Australia): Distinctive beehive-shaped sandstone domes formed by millions of years of erosion.
+  - The Three Sisters (Blue Mountains, New South Wales): A striking rock formation in the Blue Mountains National Park, steeped in Aboriginal legend.
+  - Kati Thanda-Lake Eyre (South Australia): Australia's largest salt lake, famous for its incredible pink hues when it holds water.
+  - The Pinnacles (Nambung National Park, Western Australia): Thousands of limestone formations rising from the sand, creating an otherworldly landscape.
+  - Wilpena Pound (Flinders Ranges, South Australia): A huge, natural amphitheatre formed by a vast crater surrounded by jagged mountains.
+  - Kata Tjuta (Uluru-Kata Tjuta National Park, Northern Territory): Often overshadowed by Uluru, this group of 36 large, rounded rock domes is equally impressive and culturally significant.
+  - Mitchell Falls (Kimberley, Western Australia): A spectacular four-tiered waterfall set amidst the red rocks and tropical rainforest of the Kimberley region.
+  - Horizontal Falls (Kimberley, Western Australia): A unique tidal phenomenon where massive tides rush through narrow gorges, creating the illusion of horizontal waterfalls.
+  - Kings Canyon (Northern Territory): A massive canyon with towering sandstone walls, lush palm-filled oases, and ancient rock formations.
+  - Lake Hillier (Western Australia): A bubblegum-pink lake on Middle Island, whose vibrant color is a natural mystery.
+  - Wave Rock (Western Australia): A massive, naturally occurring rock formation shaped like a breaking ocean wave.
+  - Flinders Chase National Park (Kangaroo Island, South Australia): Home to iconic Remarkable Rocks and Admirals Arch.
+  - Cradle Mountain-Lake St Clair National Park (Tasmania): Part of the Tasmanian Wilderness World Heritage Area, known for its rugged mountains, ancient rainforests, and glacial lakes.
+  - Noosa Everglades (Queensland): A unique subtropical marshland with a network of branching waterways.
 
 # Ideas
 
