@@ -1,12 +1,11 @@
 [
 	{
-		"name": "Eco Station",
+		"name": "Ecosanctuary",
 		"science": 1,
 		"culture": 1
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
 		"uniques": [
-			"Cannot be built on [Forest] tiles",
 			"[+1 Gold] <after discovering [Currency]>",
 			"[+1 Culture] <after discovering [Philosophy]>",
       			"Can only be built to improve a resource",
