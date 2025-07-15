@@ -26,8 +26,18 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - "Surf Club", Extra Happiness on Coast Tiles
   - "National Surf Museum", National Wonder which give extra Happiness, requires Surf Clubs in all cities.
 
+**City States, based on Island Nations close to Australia**
+  - Kiribati, Marshall Islands, Micronesia, Palau, Tuvalu, Solomon Islands, Tonga, Samoa, Cook Islands, Niue
+
+**New Tile Resources and Improvements
+  - Koalas!
+  - Which can be improved by an Ecosantuary
+
 # Todo list
 
+- Tile Resources
+  - Kangaroos, can be improved by Ecosantuary or Paddocks
+  - Sharks, Shark Diving Center
 - New wonders
   - Melbourne cricket ground
   - Sydney Harbour Bridge
@@ -41,17 +51,6 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Koaloas, forest, camp
   - Opals, Hills Mines
   - Waves, Coast ?
-- New City States
-  - Kiribati
-  - Marshall Islands
-  - Micronesia (Federated States of)
-  - Palau
-  - Tuvalu
-  - Solomon Islands (While Guadalcanal is mentioned as a potential city-state in some discussions, the Solomon Islands as a whole are not a distinct Civ 5 nation-state or main city-state.)
-  - Tonga (Often grouped under the "Polynesia" civilization, but not a distinct Civ 5 nation-state itself)
-  - Samoa (Similar to Tonga, often represented by "Polynesia")
-  - Cook Islands (Associated with New Zealand, but a self-governing island nation)
-  - Niue (Associated with New Zealand, but a self-governing island nation)
 - New Natural Wonders
   - Twelve Apostles (Victoria): Iconic limestone stacks off the coast of Victoria, part of the Great Ocean Road.
   - Ningaloo Reef (Western Australia): The world's largest fringing reef, known for whale sharks and being easily accessible from the shore.
@@ -72,21 +71,7 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Flinders Chase National Park (Kangaroo Island, South Australia): Home to iconic Remarkable Rocks and Admirals Arch.
   - Cradle Mountain-Lake St Clair National Park (Tasmania): Part of the Tasmanian Wilderness World Heritage Area, known for its rugged mountains, ancient rainforests, and glacial lakes.
   - Noosa Everglades (Queensland): A unique subtropical marshland with a network of branching waterways.
-
-# Ideas
-
-**Unique Improvement: "Outback Station"**  
-- Can be built on desert and plains.
-- Provides Food and Production; extra bonuses if adjacent to sheep or cattle.
-- Later gains Gold when Railroad technology is unlocked.
-
-# Todo
-
-- Add instructions to run locally
-- Make script handle more sizes that just down
-- Make script output the text file as well
-- Make museum picture bigger (done)
-- New hut image
-- Add preview image
-- Make mod findable
-
+- Unique Improvement: "Outback Station"**  
+  - Can be built on desert and plains.
+  - Provides Food and Production; extra bonuses if adjacent to sheep or cattle.
+  - Later gains Gold when Railroad technology is unlocked.
