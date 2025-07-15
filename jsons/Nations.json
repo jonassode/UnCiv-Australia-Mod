@@ -54,5 +54,125 @@
             "Shepparton-Mooroopna",
             "Mildura-Buronga"
         ]
-    }
+    },
+    {
+        "name": "Kiribati",
+        "adjective": ["Kiribatian"],
+        "cityStateType": "Cultured",
+        "startBias": ["Coast"],
+        "declaringWar": "The tide of our will has turned. Prepare for the storm.",
+        "attacked": "You have disturbed our peace. The ocean will remember this.",
+        "defeated": "Our islands may fall, but our spirit endures, like the endless sea.",
+        "outerColor": [0, 63, 135],
+        "innerColor": [206, 17, 38],
+        "cities": ["Tarawa"]
+    },
+    {
+        "name": "Marshall Islands",
+        "adjective": ["Marshallese"],
+        "cityStateType": "Maritime",
+        "startBias": ["Coast"],
+        "declaringWar": "Our canoes are ready, our resolve is set. The journey begins.",
+        "attacked": "We will not go silently to our watery graves. This challenge is met.",
+        "defeated": "Though the waves may overwhelm us, our legacy sails on.",
+        "outerColor": [0, 56, 147],
+        "innerColor": [221, 117, 0],
+        "cities": ["Majuro"]
+    },
+    {
+        "name": "Micronesia",
+        "adjective": ["Micronesian"],
+        "cityStateType": "Cultured",
+        "startBias": ["Coast"],
+        "declaringWar": "Our unity will guide us. The time for action is now.",
+        "attacked": "You seek to divide us, but our islands are bound by the sea.",
+        "defeated": "Our strength lies in our bonds, even in defeat, we remain.",
+        "outerColor": [117, 178, 221],
+        "innerColor": [255, 255, 255],
+        "cities": ["Palikir"]
+    },
+    {
+        "name": "Palau",
+        "adjective": ["Palauan"],
+        "cityStateType": "Militaristic",
+        "startBias": ["Coast"],
+        "declaringWar": "Your actions demand a response. We are ready for battle.",
+        "attacked": "You underestimate our resolve. This will be a costly mistake.",
+        "defeated": "Our spirit is not broken, only tested. We will rise again.",
+        "outerColor": [0, 153, 255],
+        "innerColor": [255, 255, 0],
+        "cities": ["Ngerulmud"]
+    },
+    {
+        "name": "Tuvalu",
+        "adjective": ["Tuvaluan"],
+        "cityStateType": "Religious",
+        "startBias": ["Coast"],
+        "declaringWar": "By divine will, our path is clear. Let the conflict commence.",
+        "attacked": "Our faith is our shield. You will find no easy victory here.",
+        "defeated": "Though humbled, our spirit remains strong, guided by the Almighty.",
+        "outerColor": [1, 33, 105],
+        "innerColor": [255, 205, 0],
+        "cities": ["Funafuti"]
+    },
+    {
+        "name": "Solomon Islands",
+        "adjective": ["Solomon Islander"],
+        "cityStateType": "Mercantile",
+        "startBias": ["Coast"],
+        "declaringWar": "Your trespasses demand retribution. Our resolve is firm.",
+        "attacked": "You have brought conflict to our shores. We will defend what is ours.",
+        "defeated": "The battle is lost, but our people's strength endures.",
+        "outerColor": [0, 81, 186],
+        "innerColor": [252, 209, 22],
+        "cities": ["Honiara"]
+    },
+    {
+        "name": "Tonga",
+        "adjective": ["Tongan"],
+        "cityStateType": "Cultured",
+        "startBias": ["Coast"],
+        "declaringWar": "Our ancient lineage calls for justice. Let the drums of war beat.",
+        "attacked": "You challenge the spirit of Tonga. This aggression will not stand.",
+        "defeated": "Our pride remains, even in this bitter moment.",
+        "outerColor": [193, 0, 0],
+        "innerColor": [255, 255, 255],
+        "cities": ["Nukuʻalofa"]
+    },
+    {
+        "name": "Samoa",
+        "adjective": ["Samoan"],
+        "cityStateType": "Religious",
+        "startBias": ["Coast"],
+        "declaringWar": "The Fa'a Samoa will prevail. Our path is chosen.",
+        "attacked": "You have brought strife to our peaceful shores. We will resist.",
+        "defeated": "Though we fall, the Samoan way of life will continue.",
+        "outerColor": [0, 43, 127],
+        "innerColor": [206, 17, 38],
+        "cities": ["Apia"]
+    },
+    {
+        "name": "Cook Islands",
+        "adjective": ["Cook Islander"],
+        "cityStateType": "Mercantile",
+        "startBias": ["Coast"],
+        "declaringWar": "Our foundations are strong. You force our hand.",
+        "attacked": "You have awakened the watchful spirit of our islands. Prepare for resistance.",
+        "defeated": "Our legs may tire, but our spirit remains watchful.",
+        "outerColor": [0, 36, 125],
+        "innerColor": [207, 20, 43],
+        "cities": ["Avarua"]
+    },
+    {
+        "name": "Niue",
+        "adjective": ["Niuean"],
+        "cityStateType": "Maritime",
+        "startBias": ["Coast"],
+        "declaringWar": "Our resolve is as deep as the ocean. We accept your challenge.",
+        "attacked": "You have come to our shores with ill intent. We will stand firm.",
+        "defeated": "The battle is lost, but our connection to this land remains.",
+        "outerColor": [254, 221, 0],
+        "innerColor": [1, 33, 105],
+        "cities": ["Alofi"]
+    }    
 ]
