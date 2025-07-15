@@ -2,7 +2,6 @@
 	{
 		"name": "Ecosanctuary",
 		"science": 1,
-		"culture": 1,
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
 		"terrainsCanBeBuiltOn": [
