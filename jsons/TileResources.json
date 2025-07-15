@@ -1,1 +1,12 @@
-[]
+[
+  	{
+  		"name": "Koalas",
+  		"resourceType": "Bonus",
+  		"terrainsCanBeFoundOn": ["Forest"],
+  		"food": 1,
+  		"improvement": "Farm",
+  		"improvementStats": {"Forest": 1},
+  		"uniques": ["Generated on every [14] tiles <in [Forest] tiles>",
+  					"Generated on every [16] tiles <in [Forest] tiles> <in [Hill] Regions>"]
+	}
+]
