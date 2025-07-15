@@ -2,14 +2,14 @@
 	{
 		"name": "Eco Station",
 		"science": 1,
-    "culture": 1
+		"culture": 1
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
 		"uniques": [
 			"Cannot be built on [Forest] tiles",
 			"[+1 Gold] <after discovering [Currency]>",
 			"[+1 Culture] <after discovering [Philosophy]>",
-      "Can only be built to improve a resource",
+      			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+10 Gold, +2 Production]"
 		],
 		"civilopediaText": [
@@ -17,7 +17,7 @@
 				"Separator": true
 			},
 			{
-				"text": "A Spot to relax and watch beautiful animals"
+				"text": "A spot to relax and watch beautiful animals"
 			}
 		]
 	}
