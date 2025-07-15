@@ -28,7 +28,7 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 **City States, based on Island Nations close to Australia**
   - Kiribati, Marshall Islands, Micronesia, Palau, Tuvalu, Solomon Islands, Tonga, Samoa, Cook Islands, Niue
 
-**New Tile Resources and Improvements
+**New Tile Resources and Improvements**
   - Koalas!
   - Which can be improved by an Ecosantuary
 
@@ -37,19 +37,16 @@ If you find any problems or have feature requests, don't hesitate to raise an is
 - Tile Resources
   - Kangaroos, can be improved by Ecosantuary or Paddocks
   - Sharks, Shark Diving Center
+  - Opals, Hills Mines
+  - Waves, Coast
 - New wonders
-  - Melbourne cricket ground
+  - Melbourne Cricket Ground
   - Sydney Harbour Bridge
   - The Big Pineapple
   - Shrine of Remembrance
 - New natural wonder enhancers
   - Voice of the First Nations - Uluru
   - Diving Center - Great Barrier Reef
-- New tile resources
-  - Kangaros, fields, paddock
-  - Koaloas, forest, camp
-  - Opals, Hills Mines
-  - Waves, Coast ?
 - New Natural Wonders
   - Twelve Apostles (Victoria): Iconic limestone stacks off the coast of Victoria, part of the Great Ocean Road.
   - Ningaloo Reef (Western Australia): The world's largest fringing reef, known for whale sharks and being easily accessible from the shore.
@@ -70,7 +67,7 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Flinders Chase National Park (Kangaroo Island, South Australia): Home to iconic Remarkable Rocks and Admirals Arch.
   - Cradle Mountain-Lake St Clair National Park (Tasmania): Part of the Tasmanian Wilderness World Heritage Area, known for its rugged mountains, ancient rainforests, and glacial lakes.
   - Noosa Everglades (Queensland): A unique subtropical marshland with a network of branching waterways.
-- Unique Improvement: "Outback Station"**  
+- New Improvement: "Outback Station"**  
   - Can be built on desert and plains.
   - Provides Food and Production; extra bonuses if adjacent to sheep or cattle.
   - Later gains Gold when Railroad technology is unlocked.
