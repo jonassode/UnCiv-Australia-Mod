@@ -5,7 +5,7 @@
   		"terrainsCanBeFoundOn": ["Forest"],
   		"happiness": 1,
   		"improvement": "Ecosanctuary",
-  		"improvementStats": {"culture": 1},
+  		"improvementStats": {"gold": 1, "happiness": 1},
   		"uniques": [
 			"Generated on every [14] tiles <in [Forest] tiles>",
   			"Generated on every [16] tiles <in [Forest] tiles> <in [Hill] Regions>"]
