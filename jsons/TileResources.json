@@ -3,7 +3,7 @@
   		"name": "Koalas",
   		"resourceType": "Bonus",
   		"terrainsCanBeFoundOn": ["Forest"],
-  		"gold": 1,
+  		"happiness": 1,
   		"improvement": "Ecosanctuary",
   		"improvementStats": {"culture": 1},
   		"uniques": [
