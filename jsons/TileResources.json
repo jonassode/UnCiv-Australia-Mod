@@ -6,7 +6,8 @@
   		"food": 1,
   		"improvement": "Eco Station",
   		"improvementStats": {"Forest": 1},
-  		"uniques": ["Generated on every [14] tiles <in [Forest] tiles>",
-  					"Generated on every [16] tiles <in [Forest] tiles> <in [Hill] Regions>"]
+  		"uniques": [
+			"Generated on every [14] tiles <in [Forest] tiles>",
+  			"Generated on every [16] tiles <in [Forest] tiles> <in [Hill] Regions>"]
 	}
 ]
