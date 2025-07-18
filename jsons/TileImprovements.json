@@ -6,9 +6,6 @@
 		"happiness": 1,
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
-		"terrainsCanBeBuiltOn": [
-			"Forest",
-		],
 		"uniques": [
 			"[+1 Gold] <after discovering [Ecology]>",
 			"[+1 Science] <after discovering [Biology]>",
@@ -29,11 +26,7 @@
 		"food": 2,
 		"production": 1,
 		"turnsToBuild": 8,
-		"techRequired": "Construction",
-		"terrainsCanBeBuiltOn": [
-			"Plains",
-			"Grassland"
-		],
+		"techRequired": "Trapping",
 		"uniques": [
       			"Can only be built to improve a resource",
 			"Pillaging this improvement yields approximately [+5 Gold, +5 Food]"
