@@ -18,14 +18,14 @@ BuildingIcons/Surf Club
   orig: 100, 100
   offset: 0, 0
   index: -1
-ImprovementIcons/Ecosanctuary.png
+ImprovementIcons/Ecosanctuary
   rotate: false
   xy: 0, 200
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-ImprovementIcons/Hunting Lodge.png
+ImprovementIcons/Hunting Lodge
   rotate: false
   xy: 0, 300
   size: 100, 100
