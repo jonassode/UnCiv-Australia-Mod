@@ -7,6 +7,7 @@
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
 		"uniques": [
+			"Does not need removal of [Forest]",
 			"[+1 Gold] <after discovering [Ecology]>",
 			"[+1 Science] <after discovering [Biology]>",
       			"Can only be built to improve a resource",
