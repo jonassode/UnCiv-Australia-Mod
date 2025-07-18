@@ -2,6 +2,8 @@
 	{
 		"name": "Ecosanctuary",
 		"science": 1,
+		"gold": 1,
+		"happiness": 1,
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
 		"terrainsCanBeBuiltOn": [
