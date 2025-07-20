@@ -29,13 +29,12 @@ If you find any problems or have feature requests, don't hesitate to raise an is
   - Kiribati, Marshall Islands, Micronesia, Palau, Tuvalu, Solomon Islands, Tonga, Samoa, Cook Islands, Niue
 
 **New Tile Resources and Improvements**
-  - Koalas!
-  - Which can be improved by an Ecosantuary
+  - Koalas, which can be improved by an Ecosantuary
+  - Kangaroos, can be improved by Ecosantuary or Hunting Lodge
 
 # Todo list
 
 - Tile Resources
-  - Kangaroos, can be improved by Ecosantuary or Paddocks
   - Sharks, Shark Diving Center
   - Opals, Hills Mines
   - Waves, Coast
