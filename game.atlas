@@ -1,6 +1,6 @@
 
 game.png
-size: 100, 400
+size: 100, 800
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
@@ -18,23 +18,44 @@ BuildingIcons/Surf Club
   orig: 100, 100
   offset: 0, 0
   index: -1
-NationIcons/Australia
+ImprovementIcons/Ecosanctuary
   rotate: false
   xy: 0, 200
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-ResourceIcons/Koalas
+ImprovementIcons/Hunting Lodge
   rotate: false
   xy: 0, 300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Digger
+NationIcons/Australia
   rotate: false
   xy: 0, 400
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Kangaroos
+  rotate: false
+  xy: 0, 500
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Koalas
+  rotate: false
+  xy: 0, 600
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Digger
+  rotate: false
+  xy: 0, 700
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

@@ -2,12 +2,12 @@
 	{
 		"name": "Ecosanctuary",
 		"science": 1,
+		"gold": 1,
+		"happiness": 1,
 		"turnsToBuild": 8,
 		"techRequired": "Construction",
-		"terrainsCanBeBuiltOn": [
-			"Forest",
-		],
 		"uniques": [
+			"Does not need removal of [Forest]",
 			"[+1 Gold] <after discovering [Ecology]>",
 			"[+1 Science] <after discovering [Biology]>",
       			"Can only be built to improve a resource",
@@ -19,6 +19,25 @@
 			},
 			{
 				"text": "A spot to relax and watch beautiful animals"
+			}
+		]
+	},
+	{
+		"name": "Hunting Lodge",
+		"food": 2,
+		"production": 1,
+		"turnsToBuild": 8,
+		"techRequired": "Trapping",
+		"uniques": [
+      			"Can only be built to improve a resource",
+			"Pillaging this improvement yields approximately [+5 Gold, +5 Food]"
+		],
+		"civilopediaText": [
+			{
+				"Separator": true
+			},
+			{
+				"text": "Go grab a gun and we can go shoot us some roos!"
 			}
 		]
 	}
