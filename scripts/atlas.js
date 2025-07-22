@@ -2,6 +2,29 @@ const { Jimp } = require('jimp');
 const fs = require('fs');
 const path = require('path');
 
+// Read command-line arguments
+// process.argv[0] is 'node'
+// process.argv[1] is the script file path
+// process.argv[2] would be the first custom argument (image directory)
+// process.argv[3] would be the second custom argument (output file name)
+const args = process.argv.slice(2);
+
+// Check if image directory and output file name are provided
+if (args.length < 2) {
+    console.error('Error: Both image directory and output file name must be provided as command-line arguments.');
+    console.error('Usage: node atlas.js <image_directory_path> <output_spritesheet_name>');
+    process.exit(1); // Exit with an error code
+}
+
+const imageDirectory = args[0];
+const outputFileName = args[1];
+
+// Define the directory where your source images are located.
+// __dirname refers to the directory of the current script file.
+const imageDirectory = path.join(__dirname, imageDirectory);
+// Construct the full path for the output spritesheet.
+const outputFilePath = path.join(__dirname, outputFileName);
+
 /**
  * Recursively gets all image files from a directory and its subdirectories
  * @param {string} dir - The directory to scan
@@ -42,20 +65,15 @@ async function loadImage(imagePath) {
 /**
  * Asynchronously creates a spritesheet from images found in a specified directory
  * and its subdirectories. The images are stacked vertically in the spritesheet.
- * @param {string} inputImageDirectory - The path to the directory containing source images.
- * @param {string} outputSpriteSheetName - The name of the output spritesheet file (e.g., 'game.png').
  */
-async function createSpritesheet(inputImageDirectory, outputSpriteSheetName) {
+async function createSpritesheet() {
     try {
-        // Construct the full path for the output spritesheet based on the input parameters.
-        const outputFilePath = path.join(__dirname, '..', outputSpriteSheetName);
-
-        // Read all image files recursively from the specified input image directory
-        const imageFiles = await getImageFilesRecursively(inputImageDirectory);
+        // Read all image files recursively from the image directory
+        const imageFiles = await getImageFilesRecursively(imageDirectory);
 
         // If no image files are found, log a message and exit
         if (imageFiles.length === 0) {
-            console.log(`No image files found in the specified directory (${inputImageDirectory}) or its subdirectories.`);
+            console.log('No image files found in the specified directory or its subdirectories.');
             return;
         }
 
@@ -108,22 +126,5 @@ async function createSpritesheet(inputImageDirectory, outputSpriteSheetName) {
     }
 }
 
-// Read command-line arguments
-// process.argv[0] is 'node'
-// process.argv[1] is the script file path
-// process.argv[2] would be the first custom argument (image directory)
-// process.argv[3] would be the second custom argument (output file name)
-const args = process.argv.slice(2);
-
-// Check if image directory and output file name are provided
-if (args.length < 2) {
-    console.error('Error: Both image directory and output file name must be provided as command-line arguments.');
-    console.error('Usage: node atlas.js <image_directory_path> <output_spritesheet_name>');
-    process.exit(1); // Exit with an error code
-}
-
-const imageDirectory = args[0];
-const outputFileName = args[1];
-
 // Call the main function to start the spritesheet creation process
-createSpritesheet(imageDirectory, outputFileName);
+createSpritesheet();
