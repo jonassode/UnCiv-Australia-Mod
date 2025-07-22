@@ -16,12 +16,12 @@ if (args.length < 2) {
     process.exit(1); // Exit with an error code
 }
 
-const imageDirectory = args[0];
+const inputImageDirectory = args[0];
 const outputFileName = args[1];
 
 // Define the directory where your source images are located.
 // __dirname refers to the directory of the current script file.
-const imageDirectory = path.join(__dirname, imageDirectory);
+const imageDirectory = path.join(__dirname, inputImageDirectory);
 // Construct the full path for the output spritesheet.
 const outputFilePath = path.join(__dirname, outputFileName);
 
