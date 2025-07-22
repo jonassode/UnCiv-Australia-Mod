@@ -42,7 +42,7 @@ jobs:
       - name: Generate tilemap
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          node ./scripts/atlas.js
+          node ./scripts/atlas.js '../Images/' 'game.png'
 
       # Step 5: Commit the generated files to the repository
       # This step will add the 'game.png'
@@ -51,5 +51,20 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit_message: "chore: Update tilemap and atlas"
+          commit_message: "chore: Update tilemap"
           file_pattern: game.png
+
+      # Step 6: Generate the tilemap for tilesets
+      - name: Generate tilemap
+        # - shell: 'script -q -e -c "bash {0}"'
+        run: |
+          node ./scripts/atlas.js '../Images.Tilesets/' 'tilesets.png'
+
+      # Step 7: Commit the generated files to the repository
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "chore: Update tilemap for tilesets"
+          file_pattern: tilesets.png
+          
