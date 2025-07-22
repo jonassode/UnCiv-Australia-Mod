@@ -42,7 +42,7 @@ jobs:
       - name: Generate tilemap
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          node ./scripts/atlas.js '../Images' 'game.png' 
+          node ./scripts/atlas.js '../Images' '../game.png' 
 
       # Step 5: Commit the generated files to the repository
       # This step will add the 'game.png'
@@ -58,7 +58,7 @@ jobs:
       - name: Generate tilemap
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          node ./scripts/atlas.js '../Images.Tilesets' 'tilesets.png'
+          node ./scripts/atlas.js '../Images.Tilesets' '../tilesets.png'
 
       # Step 7: Commit the generated files to the repository
       - name: Commit files
