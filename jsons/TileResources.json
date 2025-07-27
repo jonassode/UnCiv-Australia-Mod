@@ -22,5 +22,15 @@
 			"Generated on every [20] tiles <in [Plain] tiles>",
 			"Generated on every [22] tiles <in [Grassland] tiles>"			
 		]
+	},
+	{
+  		"name": "Sharks",
+  		"resourceType": "Bonus",
+  		"terrainsCanBeFoundOn": ["Coast","Ocean"],
+
+  		"uniques": [
+			"Generated on every [14] tiles <in [Ocean] tiles>",
+			"Generated on every [20] tiles <in [Coast] tiles>"			
+		]
 	}
 ]
