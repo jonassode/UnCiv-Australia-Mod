@@ -6,7 +6,7 @@
 		"hurryCostModifier": 25,
 		"uniques": [
 			"Must be next to [Coast]",
-			"[+1 Happiness] from [Coast] tiles [in this city]" 
+			"[+0.5 Happiness] from [Coast] tiles [in this city]" 
 		],
 		"requiredTech": "Optics",
 	},
