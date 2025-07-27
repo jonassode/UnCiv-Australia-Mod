@@ -1,6 +1,6 @@
 
 game.png
-size: 100, 800
+size: 100, 900
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
@@ -53,9 +53,16 @@ ResourceIcons/Koalas
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Digger
+ResourceIcons/Sharks
   rotate: false
   xy: 0, 700
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Digger
+  rotate: false
+  xy: 0, 800
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
