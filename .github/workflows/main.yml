@@ -54,11 +54,11 @@ jobs:
           commit_message: "chore: Update tilemap"
           file_pattern: game.png
 
-      # Step 6: Generate the tilemap for tilesets
+      # Step 6: Generate the tilemap for fantasyhex tilesets
       - name: Generate tilemap
         # - shell: 'script -q -e -c "bash {0}"'
         run: |
-          node ./scripts/atlas.js '../Images.Tilesets' '../tilesets.png'
+          node ./scripts/atlas.js '../Images.Tilesets/TileSets/FantasyHex' '../tilesets-fantasyhex.png'
 
       # Step 7: Commit the generated files to the repository
       - name: Commit files
@@ -66,5 +66,18 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: "chore: Update tilemap for tilesets"
-          file_pattern: tilesets.png
+          file_pattern: tilesets-fantasyhex.png
           
+      # Step 8: Generate the tilemap for hexarealm tilesets
+      - name: Generate tilemap
+        # - shell: 'script -q -e -c "bash {0}"'
+        run: |
+          node ./scripts/atlas.js '../Images.Tilesets/TileSets/HexaRealm' '../tilesets-hexarealm.png'
+
+      # Step 9: Commit the generated files to the repository
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "chore: Update tilemap for tilesets"
+          file_pattern: tilesets-hexarealm.png
